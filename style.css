@@ -16,6 +16,7 @@ body {
     top: 0px;
     bottom: 0px;
     opacity: 0.83;
+    z-index:1;
 }
 
 .profile {
@@ -46,4 +47,26 @@ body {
     width:200px;
     background-color:#1f0099;
     margin:8px auto;
+}
+
+.menu {
+    list-style:none;
+    position:absolute;
+    top:0px;
+    right:100px;
+    cursor:pointer;
+    z-index:20
+}
+
+.links {
+    float:left;
+    color:cornsilk;
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:10px;
+}
+
+.links:hover {
+    background-color:darkorchid;
 }
