@@ -6,7 +6,7 @@ body {
 
 #welcome {
     width: 100%;
-    height:90%;
+    height: 90%;
     position: absolute;
     color: floralwhite;
     background: linear-gradient(#170061 0%, #deb0ff 100%);
@@ -16,7 +16,7 @@ body {
     top: 0px;
     bottom: 0px;
     opacity: 0.83;
-    z-index:1;
+    z-index: 1;
 }
 
 .profile {
@@ -37,36 +37,73 @@ body {
     text-align: center;
     line-height: 1.2;
     font-family: 'Amatic SC', cursive;
-    font-weight: bolder; 
-    font-size:25px;
-    max-width:450px;
+    font-weight: bolder;
+    font-size: 25px;
+    max-width: 450px;
 }
 
 .line {
-    height:6px;
-    width:200px;
-    background-color:#1f0099;
-    margin:8px auto;
+    height: 6px;
+    width: 200px;
+    background-color: #1f0099;
+    margin: 8px auto;
 }
 
 .menu {
-    list-style:none;
-    position:absolute;
-    top:0px;
-    right:100px;
-    cursor:pointer;
-    z-index:20
+    list-style: none;
+    position: fixed;
+    top: 0px;
+    cursor: pointer;
+    z-index: 20;
+    background-color:darkblue;
+    width:100%;
 }
 
 .links {
-    float:left;
-    color:cornsilk;
-    padding-bottom:10px;
-    padding-left:10px;
-    padding-right:10px;
-    padding-top:10px;
+    float: left;
+    color: cornsilk;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
 }
 
 .links:hover {
-    background-color:darkorchid;
+    background-color: darkorchid;
+}
+
+a {
+    text-decoration: none;
+    color:purple;
+    text-shadow:2px 2px floralwhite;
+}
+
+#writing a {
+    text-decoration:none !important;
+    text-shadow:none !important;
+    color:plum;
+}
+
+.article:hover {
+    color: aqua;
+}
+
+.zoom {
+    transition: transform 2s;
+}
+
+.zoom:hover {
+    transform: scale(1.7);
+}
+
+.out {
+    transition: transform 2s;
+}
+
+.out:hover {
+    transform: scale(0.7);
+}
+
+.contact_1 p {
+    display: inline;
 }
